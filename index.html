@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script type ="text/javascript">
-        var a = prompt('Please enter the a value');
-        var b = prompt('Please enter the b value');
-        console.log(`The value of a is: ${a}, The value of b is: ${b}`);
-        var temp;
-        temp = a;
-        a = b;
-        b = temp;
-        console.log(`After Swapping \n The value of a is: ${a}, The value of b is: ${b}`);
-    </script>
 </head>
 <body>
-    
+    <h2>DOM on event handler</h2>
+
+<input type="text" id="text" name="fname">
+
+<button onclick="myFunction()">Submit</button>
+
+<script>
+
+function myFunction() {
+
+var text=document.getElementById("text").value;
+
+alert(text);
+
+}
+
+</script>
 </body>
 </html>
